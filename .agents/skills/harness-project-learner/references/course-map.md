@@ -8,7 +8,7 @@
 
 Day01 建立系统和运行认识 → Day02–04 会话与异步轮次 → Day05–06 人工和实时事件 → Day07 总结客服并进入 AI → Day08–10 执行、工具和校验 → Day11 动态技能与完整链路。
 
-部署文档属于 Day01；只读代码模式可略读操作步骤，完整课程/部署模式保留。第一次进入 AI 阶段可补充 Harness 概念，其他补充材料按需使用。
+每篇文章按原文二级、三级标题的顺序讲解，保留原编号；下表只是定位提示，不替代文章完整大纲。部署文档属于 Day01，除非用户明确要求略读或跳过，否则按原文安排讲解。第一次进入 AI 阶段可补充 Harness 概念，其他补充材料按需使用。
 
 | Day / 文档顺序 | 原文 | 优先定位的小节/概念 | 当前源码入口 | 理解练习 |
 | --- | --- | --- | --- | --- |
@@ -17,7 +17,7 @@ Day01 建立系统和运行认识 → Day02–04 会话与异步轮次 → Day05
 | Day01 / 03 | [day01_客服服务项目初始化](../../../../docs/course-materials/originals/day01_%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D%26%E5%AE%A2%E6%9C%8D%E9%A1%B9%E7%9B%AE%E5%88%9D%E5%A7%8B%E5%8C%96/2_resource/day01_%E5%AE%A2%E6%9C%8D%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE%E5%88%9D%E5%A7%8B%E5%8C%96.md) | 配置、数据库接入、事件循环、启动入口、令牌 | 主题 9；customer-service/atguigu/common/config.py、common/event_loop.py、app/app.py | 解释为什么同名 atguigu 包要在各自环境中运行；指出一个配置的使用位置。 |
 | Day02 / 04 | [day02_客服会话建模与分层实现](../../../../docs/course-materials/originals/day02_%E5%AE%A2%E6%9C%8D%E6%9C%8D%E5%8A%A1%E4%BC%9A%E8%AF%9D%E7%BC%96%E7%A0%81%E4%B8%8A%EF%BC%88%E4%BC%9A%E8%AF%9D%E5%BB%BA%E6%A8%A1%E4%B8%8E%E5%88%86%E5%B1%82%E5%AE%9E%E7%8E%B0%EF%BC%89/2_resource/day02_%E5%AE%A2%E6%9C%8D%E4%BC%9A%E8%AF%9D%E5%BB%BA%E6%A8%A1%E4%B8%8E%E5%88%86%E5%B1%82%E5%AE%9E%E7%8E%B0.md) | 会话/消息/轮次、约束与索引、数据访问和事务 | 主题 2；customer-service/atguigu/models/models.py、app/services/chat/conversation.py | 解释三个对象的关系，并找出数据库约束或索引的实际定义。 |
 | Day03 / 05 | [day03_用户消息接收与轮次收集](../../../../docs/course-materials/originals/day03_%E5%AE%A2%E6%9C%8D%E4%BC%9A%E8%AF%9D%E7%BC%96%E7%A0%81%E4%B8%AD%EF%BC%88%E7%94%A8%E6%88%B7%E6%B6%88%E6%81%AF%E6%8E%A5%E6%94%B6%E4%B8%8E%E8%BD%AE%E6%AC%A1%E6%94%B6%E9%9B%86%EF%BC%89/2_resource/day03_%E7%94%A8%E6%88%B7%E6%B6%88%E6%81%AF%E6%8E%A5%E6%94%B6%E4%B8%8E%E8%BD%AE%E6%AC%A1%E6%94%B6%E9%9B%86.md) | message_id 幂等、会话锁、输入版本与收集窗口 | 主题 2；app/services/chat/message.py、app/services/chat/turn.py（均在 customer-service/atguigu 下） | 推演重复发送同一条消息，以及连续发送两条不同消息时的差别。 |
-| Day04 / 06 | [day04_智能处理任务的领取调用与结果保存](../../../../docs/course-materials/originals/day04_%E5%AE%A2%E6%9C%8D%E4%BC%9A%E8%AF%9D%E7%BC%96%E7%A0%81%E4%B8%8B%EF%BC%88%E6%99%BA%E8%83%BD%E5%A4%84%E7%90%86%E4%BB%BB%E5%8A%A1%E4%B8%8E%E7%BB%93%E6%9E%9C%E4%BF%9D%E5%AD%98%EF%BC%89/2_resource/day04_%E6%99%BA%E8%83%BD%E5%A4%84%E7%90%86%E4%BB%BB%E5%8A%A1%E7%9A%84%E9%A2%86%E5%8F%96%E8%B0%83%E7%94%A8%E4%B8%8E%E7%BB%93%E6%9E%9C%E4%BF%9D%E5%AD%98.md) | 领取、快照、租约、网关、准备结果与最终结算 | 主题 3/7；customer-service/atguigu/worker/ai/worker.py、ai-service/atguigu/agent/harness/run/coordinator.py | 推演 AI 执行中用户追加输入；核对讲义 7.4 与当前 confirm_run 的职责差异。 |
+| Day04 / 06 | [day04_智能处理任务的领取调用与结果保存](../../../../docs/course-materials/originals/day04_%E5%AE%A2%E6%9C%8D%E4%BC%9A%E8%AF%9D%E7%BC%96%E7%A0%81%E4%B8%8B%EF%BC%88%E6%99%BA%E8%83%BD%E5%A4%84%E7%90%86%E4%BB%BB%E5%8A%A1%E4%B8%8E%E7%BB%93%E6%9E%9C%E4%BF%9D%E5%AD%98%EF%BC%89/2_resource/day04_%E6%99%BA%E8%83%BD%E5%A4%84%E7%90%86%E4%BB%BB%E5%8A%A1%E7%9A%84%E9%A2%86%E5%8F%96%E8%B0%83%E7%94%A8%E4%B8%8E%E7%BB%93%E6%9E%9C%E4%BF%9D%E5%AD%98.md) | 领取、快照、租约、网关、准备结果与最终结算 | 主题 3/7；customer-service/atguigu/worker/ai/worker.py、ai-service/atguigu/agent/harness/run/coordinator.py | 推演 AI 执行中用户追加输入；解释当前 confirm_run 的职责。 |
 | Day05 / 07 | [day05_人工客服工单与前端状态处理](../../../../docs/course-materials/originals/day05_%E4%BA%BA%E5%B7%A5%E5%AE%A2%E6%9C%8D%E5%B7%A5%E5%8D%95%E4%B8%8E%E5%89%8D%E7%AB%AF%E7%8A%B6%E6%80%81%E5%A4%84%E7%90%86/2_resource/day05_%E4%BA%BA%E5%B7%A5%E5%AE%A2%E6%9C%8D%E5%B7%A5%E5%8D%95%E4%B8%8E%E5%89%8D%E7%AB%AF%E7%8A%B6%E6%80%81%E5%A4%84%E7%90%86.md) | 工单状态、接单并发、回复、结束服务与前端事件 | 主题 8；customer-service/atguigu/app/services/admin/handoff.py | 解释工单状态和会话模式是否一回事；沿一次接单定位锁与事务。 |
 | Day06 / 08 | [day06_实时推送与监控](../../../../docs/course-materials/originals/day06_%E5%AE%A2%E6%9C%8D%E6%9C%8D%E5%8A%A1%EF%BC%88%E5%AE%9E%E6%97%B6%E6%8E%A8%E9%80%81%E4%B8%8E%E7%9B%91%E6%8E%A7%EF%BC%89/2_resource/day06_%E5%AE%9E%E6%97%B6%E6%8E%A8%E9%80%81%E4%B8%8E%E7%9B%91%E6%8E%A7.md) | Outbox、发布订阅、WebSocket、补拉与监控 | 主题 7/9；customer-service/atguigu/worker/realtime.py、app/routers/realtime.py | 推演发布成功但数据库尚未标记成功的情况，不预设恰好一次送达。 |
 | Day07 / 09 | [Customer Service 项目总结与面试指南](../../../../docs/course-materials/originals/day07_%E5%AE%A2%E6%9C%8D%E6%9C%8D%E5%8A%A1%E6%B5%8B%E8%AF%95%E4%B8%8E%E6%80%BB%E7%BB%93%26%26AI%E6%9C%8D%E5%8A%A1%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA/2_resource/Customer%20Service%20%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93%E4%B8%8E%E9%9D%A2%E8%AF%95%E6%8C%87%E5%8D%97.md) | 客服整体链路、状态、并发和面试问答 | 主题 1–3/7–9，按问题选源码 | 用自己的话讲清完整客服链路，再回答一个失败场景；不直接照搬亮点结论。 |
@@ -37,7 +37,7 @@ Day01 建立系统和运行认识 → Day02–04 会话与异步轮次 → Day05
 
 ## 讲义与当前实现的核查重点
 
-以下是已发现的教学差异线索，不是永远固定的缺陷清单。授课时重新读取原文和当前源码；若已变更就更新本次解释，不照搬旧判断。
+以下是已发现的教学差异线索，不是永远固定的缺陷清单。备课时按需重新读取原文和当前源码；若已变更就更新解释。非关键差异留到收尾，影响正确理解的地方简短澄清，不把本表当作每节必讲内容。
 
 | 材料线索 | 需要核对的当前实现 | 教学处理 |
 | --- | --- | --- |
@@ -46,6 +46,10 @@ Day01 建立系统和运行认识 → Day02–04 会话与异步轮次 → Day05
 | Day11 动态 Skill 与「生产级」标题 | `SkillScopeMiddleware`、工具目录、运行状态与实际验证材料 | 解释单 Agent 的动态能力范围；存在规则不等于已证明生产可靠性，模型技能不等于本 Markdown 导学技能。 |
 | 部署文章包含 Dockerfile / compose.yml 示例 | 当前项目实际文件、README 与各服务配置 | 先确认文件和命令适用性。文档中的代码块不能充当磁盘文件存在的证据，不默认连课程示例主机。 |
 | 总结与概念文章中的能力、指标或工程优点 | 对应源码、可运行测试与观测结果 | 区分设计目标、代码机制和经验证的效果；不根据文章给出性能或可靠性保证。 |
+
+## 主线结束后的可选小节
+
+Day11 之后可用一个短小节介绍与旧电商客服的关键设计差别，默认只参考当前项目已有材料；用户不需要即可略过，前面各 Day 专注当前项目。
 
 ## 一课如何结束
 
