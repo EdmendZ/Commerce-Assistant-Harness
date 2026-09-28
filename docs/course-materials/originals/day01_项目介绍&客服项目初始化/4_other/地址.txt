@@ -1,0 +1,12 @@
+镜像地址:
+通过网盘分享的文件：CentOS-7-x86_64-Minimal-2009.iso
+链接: https://pan.baidu.com/s/15FRbIHhyAWys5pUEScIKrw 提取码: hpdd 
+--来自百度网盘超级会员v6的分享
+
+================================================
+
+代码地址：
+https://github.com/2019hzk/customer-service.git
+
+DBeaver
+https://dbeaver.io/download/

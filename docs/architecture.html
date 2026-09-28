@@ -1,0 +1,79 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Harness Assistant · 架构总览</title><style>body{margin:0;background:#f5f5f5;color:#2d3142;font-family:'Geist','Microsoft YaHei',sans-serif}main{max-width:1280px;margin:auto}svg{display:block;width:100%;height:auto}.note{margin:0 40px 32px;line-height:1.8;color:#4f5d75;font-size:16px}@media print{main{max-width:none}.note{font-size:12px}}</style></head><body><main><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 896" role="img" aria-labelledby="architecture-title architecture-desc">
+<title id="architecture-title">Harness Assistant 电商客服架构</title>
+<desc id="architecture-desc">页面向客服服务提交消息，后台 Worker 调用受约束的 AI 服务，AI 连接模型并查询电商 API；Redis 转发完成事件，各服务分别使用 PostgreSQL 保存数据。</desc>
+<defs><style>text{font-family:'Geist','Microsoft YaHei','Noto Sans CJK SC',sans-serif;fill:#2d3142}.sub{fill:#4f5d75;font-size:16px}.tech{font-family:'Geist Mono',Consolas,monospace;font-size:16px;fill:#4f5d75}.label{font-size:16px;fill:#4f5d75}</style>
+<marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0 0L8 3L0 6Z" fill="#4f5d75"/></marker>
+<marker id="arrow-link" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0 0L8 3L0 6Z" fill="#2e5aa8"/></marker>
+<marker id="arrow-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0 0L8 3L0 6Z" fill="#eb6c36"/></marker></defs>
+<rect width="1280" height="896" fill="#f5f5f5"/>
+<text x="40" y="48" font-size="16" fill="#4f5d75">HARNESS ASSISTANT / 系统总览</text>
+<text x="40" y="100" font-size="36" font-weight="600">AI 负责理解与查询，程序管理执行与交付</text>
+<text x="40" y="140" class="sub">读图顺序：页面 → 客服调度 → AI 助手 → 电商数据；回复通过实时事件回到页面。</text>
+
+<path d="M280 348 H430" fill="none" stroke="#2e5aa8" stroke-width="2" marker-end="url(#arrow-link)"/>
+<rect x="292" y="316" width="128" height="24" fill="#f5f5f5"/>
+<text x="296" y="334" font-size="16" class="label" font-weight="400">HTTP 发消息</text>
+<path d="M430 428 H280" fill="none" stroke="#4f5d75" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="6 4"/>
+<rect x="292" y="396" width="128" height="24" fill="#f5f5f5"/>
+<text x="296" y="414" font-size="16" class="label" font-weight="400">WS 推送回复</text>
+<path d="M710 388 H850" fill="none" stroke="#2e5aa8" stroke-width="2" marker-end="url(#arrow-link)"/>
+<rect x="720" y="356" width="120" height="24" fill="#f5f5f5"/>
+<text x="724" y="374" font-size="16" class="label" font-weight="400">请求 AI 执行</text>
+<path d="M1016 300 V248" fill="none" stroke="#2e5aa8" stroke-width="2" marker-end="url(#arrow-link)"/>
+<rect x="1032" y="256" width="140" height="24" fill="#f5f5f5"/>
+<text x="1036" y="274" font-size="16" class="label" font-weight="400">调用外部模型</text>
+<path d="M1016 476 V556" fill="none" stroke="#2e5aa8" stroke-width="2" marker-end="url(#arrow-link)"/>
+<rect x="1032" y="500" width="140" height="24" fill="#f5f5f5"/>
+<text x="1036" y="518" font-size="16" class="label" font-weight="400">查询业务数据</text>
+<path d="M512 476 V556" fill="none" stroke="#4f5d75" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="6 4"/>
+<rect x="440" y="500" width="64" height="24" fill="#f5f5f5"/>
+<text x="444" y="518" font-size="16" class="label" font-weight="400">发布</text>
+<path d="M624 556 V476" fill="none" stroke="#4f5d75" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="6 4"/>
+<rect x="636" y="500" width="64" height="24" fill="#f5f5f5"/>
+<text x="640" y="518" font-size="16" class="label" font-weight="400">订阅</text>
+<rect x="40" y="300" width="240" height="176" rx="8" fill="#f5f5f5"/>
+<rect x="40" y="300" width="240" height="176" rx="8" fill="#ffffff" stroke="#bfc0c0" stroke-width="1"/>
+<text x="60" y="332" font-size="24" class="" font-weight="600">用户与客服页面</text>
+<text x="60" y="364" font-size="16" class="sub" font-weight="400">用户端：聊天 / 订单</text>
+<text x="60" y="392" font-size="16" class="sub" font-weight="400">管理端：接单 / 回复</text>
+<text x="60" y="420" font-size="16" class="sub" font-weight="400">Vue + Vite</text>
+<rect x="430" y="300" width="280" height="176" rx="8" fill="#f5f5f5"/>
+<rect x="430" y="300" width="280" height="176" rx="8" fill="#fcf0e9" stroke="#eb6c36" stroke-width="2"/>
+<text x="450" y="332" font-size="24" class="" font-weight="600">客服服务</text>
+<text x="450" y="364" font-size="16" class="sub" font-weight="400">API：会话 / 工单 / WS</text>
+<text x="450" y="392" font-size="16" class="sub" font-weight="400">AI Worker：领取轮次</text>
+<text x="450" y="420" font-size="16" class="sub" font-weight="400">Outbox Worker：发事件</text>
+<rect x="850" y="300" width="330" height="176" rx="8" fill="#f5f5f5"/>
+<rect x="850" y="300" width="330" height="176" rx="8" fill="#fcf0e9" stroke="#eb6c36" stroke-width="2"/>
+<text x="870" y="332" font-size="24" class="" font-weight="600">AI 服务 · Harness</text>
+<text x="870" y="364" font-size="16" class="sub" font-weight="400">加载技能 → 限定工具</text>
+<text x="870" y="392" font-size="16" class="sub" font-weight="400">保存证据 → 校验与纠错</text>
+<text x="870" y="420" font-size="16" class="sub" font-weight="400">LangChain + FastAPI</text>
+<rect x="850" y="160" width="330" height="88" rx="8" fill="#f5f5f5"/>
+<rect x="850" y="160" width="330" height="88" rx="8" fill="#ffffff" stroke="#bfc0c0" stroke-width="1"/>
+<text x="870" y="192" font-size="24" class="" font-weight="600">外部大模型</text>
+<text x="870" y="224" font-size="16" class="sub" font-weight="400">生成回答、选择工具</text>
+<rect x="850" y="556" width="330" height="88" rx="8" fill="#f5f5f5"/>
+<rect x="850" y="556" width="330" height="88" rx="8" fill="#ffffff" stroke="#bfc0c0" stroke-width="1"/>
+<text x="870" y="588" font-size="24" class="" font-weight="600">电商业务服务</text>
+<text x="870" y="620" font-size="16" class="sub" font-weight="400">商品 / 订单 / 物流 / 售后</text>
+<rect x="430" y="556" width="280" height="88" rx="8" fill="#f5f5f5"/>
+<rect x="430" y="556" width="280" height="88" rx="8" fill="#ffffff" stroke="#bfc0c0" stroke-width="1"/>
+<text x="450" y="588" font-size="24" class="" font-weight="600">Redis Pub/Sub</text>
+<text x="450" y="620" font-size="16" class="sub" font-weight="400">传递完成消息与工单事件</text>
+<text x="40" y="228" font-size="16" class="sub" font-weight="400">界面与业务操作</text>
+<text x="430" y="228" font-size="16" class="sub" font-weight="400">异步任务与人工客服</text>
+<text x="40" y="520" font-size="16" class="sub" font-weight="400">页面也直接调用电商 API</text>
+<text x="40" y="548" font-size="16" class="sub" font-weight="400">用户确认后执行业务修改</text>
+<rect x="40" y="704" width="1140" height="104" rx="8" fill="#ececec" stroke="#bfc0c0"/>
+<text x="60" y="736" font-size="20" class="" font-weight="600">PostgreSQL · 按服务分别存储</text>
+<text x="60" y="776" font-size="16" class="sub" font-weight="400">客服库：会话 / Turn / 消息 / 工单 / Outbox</text>
+<text x="508" y="776" font-size="16" class="sub" font-weight="400">AI 库：Run / 工具记录</text>
+<text x="844" y="776" font-size="16" class="sub" font-weight="400">电商库：用户 / 商品 / 订单</text>
+<path d="M40 840H1180" stroke="#bfc0c0"/>
+<path d="M40 864H84" stroke="#2e5aa8" stroke-width="2"/>
+<text x="96" y="870" font-size="16" class="sub" font-weight="400">服务调用</text>
+<path d="M252 864H296" stroke="#4f5d75" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="308" y="870" font-size="16" class="sub" font-weight="400">异步事件 / 回复</text>
+<text x="564" y="870" font-size="16" class="sub" font-weight="400">职责总览：省略管理查询等次要连线；Worker 需独立启动</text>
+</svg><p class="note">图按职责合并两个前端，以及客服 API 与两个 Worker。各后端分别连接自己的数据库。AI 任务保存在 PostgreSQL 中，Redis 用于实时通知；这不是 token 流式输出。字体优先使用本地 Geist，中文及缺失字体使用系统字体回退，无需联网。</p></main></body></html>

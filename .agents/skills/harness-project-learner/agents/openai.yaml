@@ -1,0 +1,4 @@
+interface:
+  display_name: "Harness Assistant 项目导学"
+  short_description: "原课与推荐两条路线自由选择，结合讲义和源码逐节学习当前电商客服项目"
+  default_prompt: "使用 $harness-project-learner，先介绍原课顺序和推荐顺序两条学习路线，让我选择，再结合讲义与源码逐节学习。"

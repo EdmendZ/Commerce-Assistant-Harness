@@ -1,0 +1,469 @@
+{
+  "source_directory_name": "尚硅谷大模型项目之电商小二V2.0（harness+智能体）",
+  "main_documents": 14,
+  "supplementary_documents": 3,
+  "files": [
+    {
+      "source_relative_path": "day01_项目介绍&客服项目初始化/2_resource/day01_客服服务项目初始化.md",
+      "destination_relative_path": "originals/day01_项目介绍&客服项目初始化/2_resource/day01_客服服务项目初始化.md",
+      "bytes": 13543,
+      "sha256": "2f7ab0c497bba30b0876867c2f15a4fe11a0b32b58fe74a65c5a0b25fe244cb0"
+    },
+    {
+      "source_relative_path": "day01_项目介绍&客服项目初始化/2_resource/day01_电商客服_项目背景以及架构.md",
+      "destination_relative_path": "originals/day01_项目介绍&客服项目初始化/2_resource/day01_电商客服_项目背景以及架构.md",
+      "bytes": 29590,
+      "sha256": "84f88ab490174151c8fe2293c184f571bb0e70e194e059d7f515f4d61c2841c8"
+    },
+    {
+      "source_relative_path": "day01_项目介绍&客服项目初始化/2_resource/images/1.png",
+      "destination_relative_path": "originals/day01_项目介绍&客服项目初始化/2_resource/images/1.png",
+      "bytes": 1095075,
+      "sha256": "38c8fb814f6f08fc40b208418f679cf5430dae50a1310cd655fa5da871e33812"
+    },
+    {
+      "source_relative_path": "day01_项目介绍&客服项目初始化/2_resource/images/五项目交互.jpg",
+      "destination_relative_path": "originals/day01_项目介绍&客服项目初始化/2_resource/images/五项目交互.jpg",
+      "bytes": 232043,
+      "sha256": "022b369a773c5107f1cd053fdcea7738cc7526769138644501c132aeb5b11284"
+    },
+    {
+      "source_relative_path": "day01_项目介绍&客服项目初始化/2_resource/电商后台项目部署.md",
+      "destination_relative_path": "originals/day01_项目介绍&客服项目初始化/2_resource/电商后台项目部署.md",
+      "bytes": 12349,
+      "sha256": "503cbd81f840a0e7699d7f8219223fac7345c893a04979cdd5326c565e5b8d8b"
+    },
+    {
+      "source_relative_path": "day01_项目介绍&客服项目初始化/4_other/docker安装/Docker安装指南.md",
+      "destination_relative_path": "originals/day01_项目介绍&客服项目初始化/4_other/docker安装/Docker安装指南.md",
+      "bytes": 2711,
+      "sha256": "ed5a12f071aa85a28ed8aa13fb510e4d0f5e3b000d95ce4540db1ecc766b55b5"
+    },
+    {
+      "source_relative_path": "day01_项目介绍&客服项目初始化/4_other/docker安装/images/1-1697804269629.png",
+      "destination_relative_path": "originals/day01_项目介绍&客服项目初始化/4_other/docker安装/images/1-1697804269629.png",
+      "bytes": 171715,
+      "sha256": "beebb5fae86a1515bb16642ad14b1397189343913e1bd646a427602ef8202acc"
+    },
+    {
+      "source_relative_path": "day01_项目介绍&客服项目初始化/4_other/docker安装/images/1.png",
+      "destination_relative_path": "originals/day01_项目介绍&客服项目初始化/4_other/docker安装/images/1.png",
+      "bytes": 171715,
+      "sha256": "beebb5fae86a1515bb16642ad14b1397189343913e1bd646a427602ef8202acc"
+    },
+    {
+      "source_relative_path": "day01_项目介绍&客服项目初始化/4_other/docker安装/images/2-1697804269629.png",
+      "destination_relative_path": "originals/day01_项目介绍&客服项目初始化/4_other/docker安装/images/2-1697804269629.png",
+      "bytes": 234571,
+      "sha256": "449c2913149aa9e26406d7b432e40c2728103f4cb1657c00b2fb992cab2b1827"
+    },
+    {
+      "source_relative_path": "day01_项目介绍&客服项目初始化/4_other/docker安装/images/2.png",
+      "destination_relative_path": "originals/day01_项目介绍&客服项目初始化/4_other/docker安装/images/2.png",
+      "bytes": 234571,
+      "sha256": "449c2913149aa9e26406d7b432e40c2728103f4cb1657c00b2fb992cab2b1827"
+    },
+    {
+      "source_relative_path": "day01_项目介绍&客服项目初始化/4_other/docker安装/images/3-1697804269629.png",
+      "destination_relative_path": "originals/day01_项目介绍&客服项目初始化/4_other/docker安装/images/3-1697804269629.png",
+      "bytes": 173089,
+      "sha256": "0b8271b756578f841ad1d7c918de65c4646c9f807cbd595f6b4b728e0fc26192"
+    },
+    {
+      "source_relative_path": "day01_项目介绍&客服项目初始化/4_other/docker安装/images/3.png",
+      "destination_relative_path": "originals/day01_项目介绍&客服项目初始化/4_other/docker安装/images/3.png",
+      "bytes": 173089,
+      "sha256": "0b8271b756578f841ad1d7c918de65c4646c9f807cbd595f6b4b728e0fc26192"
+    },
+    {
+      "source_relative_path": "day01_项目介绍&客服项目初始化/4_other/docker安装/images/4-1697804269630.png",
+      "destination_relative_path": "originals/day01_项目介绍&客服项目初始化/4_other/docker安装/images/4-1697804269630.png",
+      "bytes": 23394,
+      "sha256": "7c99cfaa14754c2cc5eaa7e63617dd12865b27f2e6e900da43a852e118bd8b9e"
+    },
+    {
+      "source_relative_path": "day01_项目介绍&客服项目初始化/4_other/docker安装/images/4.png",
+      "destination_relative_path": "originals/day01_项目介绍&客服项目初始化/4_other/docker安装/images/4.png",
+      "bytes": 23394,
+      "sha256": "7c99cfaa14754c2cc5eaa7e63617dd12865b27f2e6e900da43a852e118bd8b9e"
+    },
+    {
+      "source_relative_path": "day01_项目介绍&客服项目初始化/4_other/docker安装/images/5-1697804269630.png",
+      "destination_relative_path": "originals/day01_项目介绍&客服项目初始化/4_other/docker安装/images/5-1697804269630.png",
+      "bytes": 29856,
+      "sha256": "cd6ef00eec2eff7cf1bdc1bb2d225e28939b9a3dfd51fd40b526877978a0577c"
+    },
+    {
+      "source_relative_path": "day01_项目介绍&客服项目初始化/4_other/docker安装/images/5.png",
+      "destination_relative_path": "originals/day01_项目介绍&客服项目初始化/4_other/docker安装/images/5.png",
+      "bytes": 29856,
+      "sha256": "cd6ef00eec2eff7cf1bdc1bb2d225e28939b9a3dfd51fd40b526877978a0577c"
+    },
+    {
+      "source_relative_path": "day01_项目介绍&客服项目初始化/4_other/docker安装/images/image-20221128104310609_LxQ7RVSyLq.png",
+      "destination_relative_path": "originals/day01_项目介绍&客服项目初始化/4_other/docker安装/images/image-20221128104310609_LxQ7RVSyLq.png",
+      "bytes": 81661,
+      "sha256": "4ed637b04d05e640c605d568b107eeee9469dfaabac0acf498856995e7d5f304"
+    },
+    {
+      "source_relative_path": "day01_项目介绍&客服项目初始化/4_other/地址.txt",
+      "destination_relative_path": "originals/day01_项目介绍&客服项目初始化/4_other/地址.txt",
+      "bytes": 357,
+      "sha256": "a478ed4e72fc91cd0ae5583382b93df4336be6de519f2b2cf0cc69a6653bc530"
+    },
+    {
+      "source_relative_path": "day01_项目介绍&客服项目初始化/4_other/课堂笔记.excalidraw",
+      "destination_relative_path": "originals/day01_项目介绍&客服项目初始化/4_other/课堂笔记.excalidraw",
+      "bytes": 2332356,
+      "sha256": "4b9dea8b1c355611a116272cffdf1bd8d82a646c3edf0a28953ca53abd237dff"
+    },
+    {
+      "source_relative_path": "day01_项目介绍&客服项目初始化/4_other/镜像加速/Docker镜像加速（梯子）.md",
+      "destination_relative_path": "originals/day01_项目介绍&客服项目初始化/4_other/镜像加速/Docker镜像加速（梯子）.md",
+      "bytes": 2327,
+      "sha256": "61f79841d5bf133316a14fba8b8048b237965dcf732c25c610c8e95993d084ad"
+    },
+    {
+      "source_relative_path": "day01_项目介绍&客服项目初始化/4_other/镜像加速/images/Docker访问原理图.png",
+      "destination_relative_path": "originals/day01_项目介绍&客服项目初始化/4_other/镜像加速/images/Docker访问原理图.png",
+      "bytes": 1605705,
+      "sha256": "ee22d79c56adc892e145db81fc8e63d0b30a80fd67eef34663a27d7b26b74d44"
+    },
+    {
+      "source_relative_path": "day02_客服服务会话编码上（会话建模与分层实现）/2_resource/day02_客服会话建模与分层实现.md",
+      "destination_relative_path": "originals/day02_客服服务会话编码上（会话建模与分层实现）/2_resource/day02_客服会话建模与分层实现.md",
+      "bytes": 38268,
+      "sha256": "ec09eeaae4b77581f161620a34b09799fe256cf84ce1bd47073a7b414ac6dc1b"
+    },
+    {
+      "source_relative_path": "day02_客服服务会话编码上（会话建模与分层实现）/4_other/课堂笔记.excalidraw",
+      "destination_relative_path": "originals/day02_客服服务会话编码上（会话建模与分层实现）/4_other/课堂笔记.excalidraw",
+      "bytes": 2418290,
+      "sha256": "364326570bb19b3f3d6d03dac3f4c1805fdc9f459dab95ad52ab263e0ed915cd"
+    },
+    {
+      "source_relative_path": "day03_客服会话编码中（用户消息接收与轮次收集）/2_resource/day03_用户消息接收与轮次收集.md",
+      "destination_relative_path": "originals/day03_客服会话编码中（用户消息接收与轮次收集）/2_resource/day03_用户消息接收与轮次收集.md",
+      "bytes": 36222,
+      "sha256": "25da3fe3894b6deceb861ac6300d7e8829ad7af04908360b758cf38c01011684"
+    },
+    {
+      "source_relative_path": "day03_客服会话编码中（用户消息接收与轮次收集）/4_other/课堂笔记.excalidraw",
+      "destination_relative_path": "originals/day03_客服会话编码中（用户消息接收与轮次收集）/4_other/课堂笔记.excalidraw",
+      "bytes": 234780,
+      "sha256": "af028a17b1068cd41d263abeef28b6437bfbf97a60122ca8f6b49e720dfb7242"
+    },
+    {
+      "source_relative_path": "day04_客服会话编码下（智能处理任务与结果保存）/2_resource/day04_智能处理任务的领取调用与结果保存.md",
+      "destination_relative_path": "originals/day04_客服会话编码下（智能处理任务与结果保存）/2_resource/day04_智能处理任务的领取调用与结果保存.md",
+      "bytes": 34852,
+      "sha256": "a4efe5541c4c479ad34a9214723c1047cdb9875c2fdb9bc55a460d2e9ec19ba1"
+    },
+    {
+      "source_relative_path": "day04_客服会话编码下（智能处理任务与结果保存）/4_other/课堂笔记.excalidraw",
+      "destination_relative_path": "originals/day04_客服会话编码下（智能处理任务与结果保存）/4_other/课堂笔记.excalidraw",
+      "bytes": 2771556,
+      "sha256": "2f5c8eef24b0fdc4c848cf9d296455b4e391626ad6c0a6865c1f7dd225fb7c27"
+    },
+    {
+      "source_relative_path": "day05_人工客服工单与前端状态处理/2_resource/day05_人工客服工单与前端状态处理.md",
+      "destination_relative_path": "originals/day05_人工客服工单与前端状态处理/2_resource/day05_人工客服工单与前端状态处理.md",
+      "bytes": 17430,
+      "sha256": "6fce5129892db162ef66b905a37df11882e9862b285e12ef9b95db538d50a7c7"
+    },
+    {
+      "source_relative_path": "day05_人工客服工单与前端状态处理/2_resource/课堂笔记.excalidraw",
+      "destination_relative_path": "originals/day05_人工客服工单与前端状态处理/2_resource/课堂笔记.excalidraw",
+      "bytes": 250952,
+      "sha256": "b0bf48fe2544409081447fc4d3c8248ace01a768821484fbbe88af92ce1aa61c"
+    },
+    {
+      "source_relative_path": "day06_客服服务（实时推送与监控）/2_resource/day06_实时推送与监控.md",
+      "destination_relative_path": "originals/day06_客服服务（实时推送与监控）/2_resource/day06_实时推送与监控.md",
+      "bytes": 13086,
+      "sha256": "7947962c07f22b2a47321eb478d24cc60e1456c823e2eee2c304f4fba876d8ff"
+    },
+    {
+      "source_relative_path": "day06_客服服务（实时推送与监控）/2_resource/images/1.png",
+      "destination_relative_path": "originals/day06_客服服务（实时推送与监控）/2_resource/images/1.png",
+      "bytes": 49732,
+      "sha256": "2a55c209acb7e1ec5293535e2c6711c08aa3e049952f74e2d700b66873fe71be"
+    },
+    {
+      "source_relative_path": "day06_客服服务（实时推送与监控）/2_resource/images/2.png",
+      "destination_relative_path": "originals/day06_客服服务（实时推送与监控）/2_resource/images/2.png",
+      "bytes": 19114,
+      "sha256": "79c7583df987f1e87324f477dd82eea724934aca90c94c3a9ea9763ed179d90d"
+    },
+    {
+      "source_relative_path": "day06_客服服务（实时推送与监控）/2_resource/images/3.png",
+      "destination_relative_path": "originals/day06_客服服务（实时推送与监控）/2_resource/images/3.png",
+      "bytes": 73744,
+      "sha256": "a9a3a34068954ef642f083653b962873a685758b07d17d2e83ca2ca33674e3e9"
+    },
+    {
+      "source_relative_path": "day06_客服服务（实时推送与监控）/2_resource/images/4.png",
+      "destination_relative_path": "originals/day06_客服服务（实时推送与监控）/2_resource/images/4.png",
+      "bytes": 73744,
+      "sha256": "a9a3a34068954ef642f083653b962873a685758b07d17d2e83ca2ca33674e3e9"
+    },
+    {
+      "source_relative_path": "day06_客服服务（实时推送与监控）/2_resource/images/5.png",
+      "destination_relative_path": "originals/day06_客服服务（实时推送与监控）/2_resource/images/5.png",
+      "bytes": 151266,
+      "sha256": "db57a018a0011146548096cb70ef635ef97fa61d53229d36d4932d191442d5f3"
+    },
+    {
+      "source_relative_path": "day06_客服服务（实时推送与监控）/2_resource/images/6.png",
+      "destination_relative_path": "originals/day06_客服服务（实时推送与监控）/2_resource/images/6.png",
+      "bytes": 149864,
+      "sha256": "fefba0e2b7a26f81eb6f6d0fe135c7b380bf26c4c02d97fa075f57e9a274d1c3"
+    },
+    {
+      "source_relative_path": "day06_客服服务（实时推送与监控）/2_resource/images/7.png",
+      "destination_relative_path": "originals/day06_客服服务（实时推送与监控）/2_resource/images/7.png",
+      "bytes": 9712,
+      "sha256": "38052443233f044bcca40aa78314d66b8327ad429cf0c8bb32ae1518beebafc4"
+    },
+    {
+      "source_relative_path": "day06_客服服务（实时推送与监控）/2_resource/images/8.png",
+      "destination_relative_path": "originals/day06_客服服务（实时推送与监控）/2_resource/images/8.png",
+      "bytes": 16817,
+      "sha256": "905a8c61b79f4f0c042158f3706b78b26b0ff5383355d415dbea579adcdff397"
+    },
+    {
+      "source_relative_path": "day06_客服服务（实时推送与监控）/4_other/课堂笔记.excalidraw",
+      "destination_relative_path": "originals/day06_客服服务（实时推送与监控）/4_other/课堂笔记.excalidraw",
+      "bytes": 1696728,
+      "sha256": "04e775663fa6ad150c9ba387c6a8e7ac5773507b91c4fcb6a9979ccb59362183"
+    },
+    {
+      "source_relative_path": "day07_客服服务测试与总结&&AI服务框架搭建/2_resource/Customer Service 项目总结与面试指南.md",
+      "destination_relative_path": "originals/day07_客服服务测试与总结&&AI服务框架搭建/2_resource/Customer Service 项目总结与面试指南.md",
+      "bytes": 48151,
+      "sha256": "990c719f6551956ef9f1f76254491adb8912853d92ab467acfe4234d2b73aa5e"
+    },
+    {
+      "source_relative_path": "day07_客服服务测试与总结&&AI服务框架搭建/2_resource/day07_AI_Service项目框架搭建.md",
+      "destination_relative_path": "originals/day07_客服服务测试与总结&&AI服务框架搭建/2_resource/day07_AI_Service项目框架搭建.md",
+      "bytes": 14245,
+      "sha256": "a38af3688029995d0b248439649fee370f0ec8df1fdd5b88f5fcf35e715e35e6"
+    },
+    {
+      "source_relative_path": "day07_客服服务测试与总结&&AI服务框架搭建/4_other/Harness_Engineering概念与原理/Harness_Engineering概念与原理.md",
+      "destination_relative_path": "originals/day07_客服服务测试与总结&&AI服务框架搭建/4_other/Harness_Engineering概念与原理/Harness_Engineering概念与原理.md",
+      "bytes": 33501,
+      "sha256": "694a8834ae40953d166ab6b1fc3b0d348f105246d21d084cb8ad153494428b56"
+    },
+    {
+      "source_relative_path": "day07_客服服务测试与总结&&AI服务框架搭建/4_other/Harness_Engineering概念与原理/images/1.三大引擎关系.png",
+      "destination_relative_path": "originals/day07_客服服务测试与总结&&AI服务框架搭建/4_other/Harness_Engineering概念与原理/images/1.三大引擎关系.png",
+      "bytes": 4323173,
+      "sha256": "6e78c59c4d6154b159373f698501bf01e7920bc9da36629747d2c63f850379f9"
+    },
+    {
+      "source_relative_path": "day07_客服服务测试与总结&&AI服务框架搭建/4_other/Harness_Engineering概念与原理/images/10、产品形态.jpg",
+      "destination_relative_path": "originals/day07_客服服务测试与总结&&AI服务框架搭建/4_other/Harness_Engineering概念与原理/images/10、产品形态.jpg",
+      "bytes": 224470,
+      "sha256": "6c97435c386c74f991f82d27d8ac4101dafc22da5ef471995cb432fdbda9f277"
+    },
+    {
+      "source_relative_path": "day07_客服服务测试与总结&&AI服务框架搭建/4_other/Harness_Engineering概念与原理/images/2.三层能力分析.png",
+      "destination_relative_path": "originals/day07_客服服务测试与总结&&AI服务框架搭建/4_other/Harness_Engineering概念与原理/images/2.三层能力分析.png",
+      "bytes": 1314869,
+      "sha256": "733d35c4fd33671a61d8d7bea2a30ee03eb8298504f639a38c497b7f14c82d8b"
+    },
+    {
+      "source_relative_path": "day07_客服服务测试与总结&&AI服务框架搭建/4_other/Harness_Engineering概念与原理/images/3.Agent完整闭环.png",
+      "destination_relative_path": "originals/day07_客服服务测试与总结&&AI服务框架搭建/4_other/Harness_Engineering概念与原理/images/3.Agent完整闭环.png",
+      "bytes": 1217486,
+      "sha256": "33628984d7c438ac569fb53c5cbdcbe5382fcac48bd3ce96c44e23e4132b1282"
+    },
+    {
+      "source_relative_path": "day07_客服服务测试与总结&&AI服务框架搭建/4_other/Harness_Engineering概念与原理/images/4.Model、Agent 与 Harness关系.png",
+      "destination_relative_path": "originals/day07_客服服务测试与总结&&AI服务框架搭建/4_other/Harness_Engineering概念与原理/images/4.Model、Agent 与 Harness关系.png",
+      "bytes": 1171864,
+      "sha256": "27eeeac979ab6a186008ffa68c7ba3adf37a292aee11501e1bc0a0df0ba24280"
+    },
+    {
+      "source_relative_path": "day07_客服服务测试与总结&&AI服务框架搭建/4_other/Harness_Engineering概念与原理/images/5、Harness的概念.png",
+      "destination_relative_path": "originals/day07_客服服务测试与总结&&AI服务框架搭建/4_other/Harness_Engineering概念与原理/images/5、Harness的概念.png",
+      "bytes": 1867344,
+      "sha256": "b60b99201371ddb12006414a022a93986e4510f38943fc98657b1d0dc443bea6"
+    },
+    {
+      "source_relative_path": "day07_客服服务测试与总结&&AI服务框架搭建/4_other/Harness_Engineering概念与原理/images/6.故障链.jpg",
+      "destination_relative_path": "originals/day07_客服服务测试与总结&&AI服务框架搭建/4_other/Harness_Engineering概念与原理/images/6.故障链.jpg",
+      "bytes": 166674,
+      "sha256": "0449d3782cd47c9fe84c7409e46b12f908757f61705a5fc24a1091b58bfa3cfe"
+    },
+    {
+      "source_relative_path": "day07_客服服务测试与总结&&AI服务框架搭建/4_other/Harness_Engineering概念与原理/images/7、Agent Loop.jpg",
+      "destination_relative_path": "originals/day07_客服服务测试与总结&&AI服务框架搭建/4_other/Harness_Engineering概念与原理/images/7、Agent Loop.jpg",
+      "bytes": 132359,
+      "sha256": "8671282cfe87dfabc2795b85b04e3a9019adca3643d09f833712244babd7cc69"
+    },
+    {
+      "source_relative_path": "day07_客服服务测试与总结&&AI服务框架搭建/4_other/Harness_Engineering概念与原理/images/8、Generator–Evaluator.jpg",
+      "destination_relative_path": "originals/day07_客服服务测试与总结&&AI服务框架搭建/4_other/Harness_Engineering概念与原理/images/8、Generator–Evaluator.jpg",
+      "bytes": 139551,
+      "sha256": "564adbbf3872945aa8e3dbabae1249f153c460f9c5225f6a977dddc2169df97d"
+    },
+    {
+      "source_relative_path": "day07_客服服务测试与总结&&AI服务框架搭建/4_other/Harness_Engineering概念与原理/images/9、三大维度.jpg",
+      "destination_relative_path": "originals/day07_客服服务测试与总结&&AI服务框架搭建/4_other/Harness_Engineering概念与原理/images/9、三大维度.jpg",
+      "bytes": 186088,
+      "sha256": "6d50e3884712021b2771a224373d975dc22717d734ddbc6452d7e4510f23e71b"
+    },
+    {
+      "source_relative_path": "day07_客服服务测试与总结&&AI服务框架搭建/4_other/课堂笔记.excalidraw",
+      "destination_relative_path": "originals/day07_客服服务测试与总结&&AI服务框架搭建/4_other/课堂笔记.excalidraw",
+      "bytes": 3381284,
+      "sha256": "5cc93101481c411612631009818cb2332c5ecd8fe03e308b3081b80fed55fb00"
+    },
+    {
+      "source_relative_path": "day08_AI服务(核心链路&&消息处理)编码实现/2_resouce/day08_AI_SERVICE运行核心链路实现.md",
+      "destination_relative_path": "originals/day08_AI服务(核心链路&&消息处理)编码实现/2_resouce/day08_AI_SERVICE运行核心链路实现.md",
+      "bytes": 19638,
+      "sha256": "ecd1bcc4ba661ef3603cc8e7978019e666ecd9302353f4b85ae594e2a0f2eb57"
+    },
+    {
+      "source_relative_path": "day08_AI服务(核心链路&&消息处理)编码实现/4_other/课堂笔记.excalidraw",
+      "destination_relative_path": "originals/day08_AI服务(核心链路&&消息处理)编码实现/4_other/课堂笔记.excalidraw",
+      "bytes": 91538,
+      "sha256": "ef58e2eb41df246bfd34c10656d82c9468340dda50cd678d40d9343f3e1c7d02"
+    },
+    {
+      "source_relative_path": "day09_AI服务(工具定义&&执行)/2_resource/day09_业务查询工具与运行上下文.md",
+      "destination_relative_path": "originals/day09_AI服务(工具定义&&执行)/2_resource/day09_业务查询工具与运行上下文.md",
+      "bytes": 25164,
+      "sha256": "63d274b848a09fee23e91b4247458c70fcab6e450430aa043a23af113aae3059"
+    },
+    {
+      "source_relative_path": "day09_AI服务(工具定义&&执行)/4_other/课堂笔记.excalidraw",
+      "destination_relative_path": "originals/day09_AI服务(工具定义&&执行)/4_other/课堂笔记.excalidraw",
+      "bytes": 258506,
+      "sha256": "bc4431f26a0a5964b9bbb05a692ad17ce2dbc99020eaa547d3c8ba877c05ca26"
+    },
+    {
+      "source_relative_path": "day10_AI服务（生产级Harness校验与异常生态）/2_resource/day10_生产级Agent_Harness校验与异常治理.md",
+      "destination_relative_path": "originals/day10_AI服务（生产级Harness校验与异常生态）/2_resource/day10_生产级Agent_Harness校验与异常治理.md",
+      "bytes": 41281,
+      "sha256": "2495ab2accf02ed928b712e86b470c1901e07c237e76b2b8e8f3f497d8679adc"
+    },
+    {
+      "source_relative_path": "day10_AI服务（生产级Harness校验与异常生态）/2_resource/课堂笔记.excalidraw",
+      "destination_relative_path": "originals/day10_AI服务（生产级Harness校验与异常生态）/2_resource/课堂笔记.excalidraw",
+      "bytes": 3840969,
+      "sha256": "cfe26db6c82bc062856a208aa878dc213cdbc3add47820e1ced578f008bf3c50"
+    },
+    {
+      "source_relative_path": "day11_AI服务（生产级Harness全链路打通）/2_resource/day11_生产级Harness全链路打通.md",
+      "destination_relative_path": "originals/day11_AI服务（生产级Harness全链路打通）/2_resource/day11_生产级Harness全链路打通.md",
+      "bytes": 25622,
+      "sha256": "903ca8fd648374e29f10c3768315259fcfc7a6ccb188eedf841703b241686e71"
+    },
+    {
+      "source_relative_path": "day11_AI服务（生产级Harness全链路打通）/2_resource/images/1.jpg",
+      "destination_relative_path": "originals/day11_AI服务（生产级Harness全链路打通）/2_resource/images/1.jpg",
+      "bytes": 292248,
+      "sha256": "c5fdf6215832c4b128efbd7d8224c4bc2986bcd6ed108a030a2cae5cd23bbb98"
+    },
+    {
+      "source_relative_path": "day11_AI服务（生产级Harness全链路打通）/2_resource/images/10.jpg",
+      "destination_relative_path": "originals/day11_AI服务（生产级Harness全链路打通）/2_resource/images/10.jpg",
+      "bytes": 704086,
+      "sha256": "85cd7fa38cce77fef028090b1bc89da0d5f6cfda9b3594806e7e9656f6a3c0c5"
+    },
+    {
+      "source_relative_path": "day11_AI服务（生产级Harness全链路打通）/2_resource/images/11.jpg",
+      "destination_relative_path": "originals/day11_AI服务（生产级Harness全链路打通）/2_resource/images/11.jpg",
+      "bytes": 671350,
+      "sha256": "872a57db3f28ee8e7851fd992358bb8e6ad17ef5100c08b6687f8fd0ebb78d4a"
+    },
+    {
+      "source_relative_path": "day11_AI服务（生产级Harness全链路打通）/2_resource/images/12.jpg",
+      "destination_relative_path": "originals/day11_AI服务（生产级Harness全链路打通）/2_resource/images/12.jpg",
+      "bytes": 810920,
+      "sha256": "52f1d6af37ef45b6ca9d3775d7b071d99df787f7469a8f05bec0faf31b4060ce"
+    },
+    {
+      "source_relative_path": "day11_AI服务（生产级Harness全链路打通）/2_resource/images/13.jpg",
+      "destination_relative_path": "originals/day11_AI服务（生产级Harness全链路打通）/2_resource/images/13.jpg",
+      "bytes": 419142,
+      "sha256": "9ec66258c4605c7b8898730ae9ddf58338d93020916bcf9de74eae52a7b3e592"
+    },
+    {
+      "source_relative_path": "day11_AI服务（生产级Harness全链路打通）/2_resource/images/14.jpg",
+      "destination_relative_path": "originals/day11_AI服务（生产级Harness全链路打通）/2_resource/images/14.jpg",
+      "bytes": 847883,
+      "sha256": "748a895b64f7f592953cdc125ff89b316e9d68aa003ffc117a8b09d53aed6946"
+    },
+    {
+      "source_relative_path": "day11_AI服务（生产级Harness全链路打通）/2_resource/images/15.jpg",
+      "destination_relative_path": "originals/day11_AI服务（生产级Harness全链路打通）/2_resource/images/15.jpg",
+      "bytes": 674428,
+      "sha256": "c766baba559c2b87810c4fbd4c3771fe035da8471048587f349d402474e0af73"
+    },
+    {
+      "source_relative_path": "day11_AI服务（生产级Harness全链路打通）/2_resource/images/16.jpg",
+      "destination_relative_path": "originals/day11_AI服务（生产级Harness全链路打通）/2_resource/images/16.jpg",
+      "bytes": 885532,
+      "sha256": "4b4198ff0a5a09d27f89db5ef7eed9583664f64f6b9078a3a23655661d9387e1"
+    },
+    {
+      "source_relative_path": "day11_AI服务（生产级Harness全链路打通）/2_resource/images/2.png",
+      "destination_relative_path": "originals/day11_AI服务（生产级Harness全链路打通）/2_resource/images/2.png",
+      "bytes": 1124663,
+      "sha256": "56a41cbcb670013eaeea9f09a2cb57f9249e3129057f6ce7c9bc28cb2579e5ab"
+    },
+    {
+      "source_relative_path": "day11_AI服务（生产级Harness全链路打通）/2_resource/images/3.jpg",
+      "destination_relative_path": "originals/day11_AI服务（生产级Harness全链路打通）/2_resource/images/3.jpg",
+      "bytes": 489635,
+      "sha256": "68f82c7c8d66d5564010137b0ae0f01b03e84fbabb65af3123338b2a07925217"
+    },
+    {
+      "source_relative_path": "day11_AI服务（生产级Harness全链路打通）/2_resource/images/4.png",
+      "destination_relative_path": "originals/day11_AI服务（生产级Harness全链路打通）/2_resource/images/4.png",
+      "bytes": 1224680,
+      "sha256": "fc23b75d066cc21def4e0b4a6502716e312e646fc3ce7d1e67f145912d738164"
+    },
+    {
+      "source_relative_path": "day11_AI服务（生产级Harness全链路打通）/2_resource/images/5.jpg",
+      "destination_relative_path": "originals/day11_AI服务（生产级Harness全链路打通）/2_resource/images/5.jpg",
+      "bytes": 615241,
+      "sha256": "525c93693d0aee4d6e7298251c26a0d30b6232ffe194f4b007895f5e356be577"
+    },
+    {
+      "source_relative_path": "day11_AI服务（生产级Harness全链路打通）/2_resource/images/6.jpg",
+      "destination_relative_path": "originals/day11_AI服务（生产级Harness全链路打通）/2_resource/images/6.jpg",
+      "bytes": 726054,
+      "sha256": "6addac4318674b9d18a104b28b551bb2e8ad49cc988ad156f165c1b83b7ab470"
+    },
+    {
+      "source_relative_path": "day11_AI服务（生产级Harness全链路打通）/2_resource/images/7.jpg",
+      "destination_relative_path": "originals/day11_AI服务（生产级Harness全链路打通）/2_resource/images/7.jpg",
+      "bytes": 613678,
+      "sha256": "4d9b4454b74a9ea60c3c886d0bad0333c29b901be8cc99819941bfc3fec48197"
+    },
+    {
+      "source_relative_path": "day11_AI服务（生产级Harness全链路打通）/2_resource/images/8.jpg",
+      "destination_relative_path": "originals/day11_AI服务（生产级Harness全链路打通）/2_resource/images/8.jpg",
+      "bytes": 611285,
+      "sha256": "216137f456c1932ac13b7c42c20193437118e209184e99e77163e206cd1dca8d"
+    },
+    {
+      "source_relative_path": "day11_AI服务（生产级Harness全链路打通）/2_resource/images/9.jpg",
+      "destination_relative_path": "originals/day11_AI服务（生产级Harness全链路打通）/2_resource/images/9.jpg",
+      "bytes": 601992,
+      "sha256": "31507dc67757083002001b8a71c7315dfd58085cf8f6d1704af1aa6394483c96"
+    },
+    {
+      "source_relative_path": "day11_AI服务（生产级Harness全链路打通）/4_other/课堂笔记.excalidraw",
+      "destination_relative_path": "originals/day11_AI服务（生产级Harness全链路打通）/4_other/课堂笔记.excalidraw",
+      "bytes": 322667,
+      "sha256": "2262d9385183ed91c596d90103a03daf237b931275aecac1a840876fee7c3407"
+    }
+  ]
+}
